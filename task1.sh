@@ -8,7 +8,7 @@ recurs () {
 	mkdir "$folderName"
 	cd "$folderName"
 	if [ $1 -lt 3 ]; then
-		(( i++ ))
+		i=$(( $i+1 ))
 		recurs $i
 	fi
 }
